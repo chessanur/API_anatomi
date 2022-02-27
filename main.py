@@ -14,7 +14,7 @@ class Item(BaseModel):
 app = FastAPI()
 
 
-@app.post('/progress')
+@app.post('/')
 async def create(item: Item):
     # Mendapatkan input data
     pretest = item.pretest
